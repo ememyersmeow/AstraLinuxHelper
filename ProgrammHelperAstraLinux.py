@@ -7,7 +7,6 @@ import webbrowser
 def icon_settings():
     root_1 = tk.Tk()
     root_1.title('Настройка значков')
-    root_1.geometry('1920x1080')
     root_1.resizable(width=True, height=True)
     canvas_1 = Canvas(root_1, width=500, height=70)
     canvas_1.create_text(250, 25, text="Настройка значков", fill="black", font=("Times", 30))
@@ -29,7 +28,6 @@ def icon_settings():
 def window_settings():
     root_2 = tk.Tk()
     root_2.title('Настройки окон')
-    root_2.geometry('1920x1080')
     root_2.resizable(width=True, height=True)
     canvas_3 = Canvas(root_2, width=500, height=70)
     canvas_3.create_text(250, 25, text="Настройки окон", fill="black", font=("Times", 30))
@@ -52,7 +50,6 @@ def window_settings():
 def monitor_settings_v2():
     root_3 = tk.Tk()
     root_3.title('Настройка монитора')
-    root_3.geometry('1920x1080')
     root_3.resizable(width=True, height=True)
     canvas_5 = Canvas(root_3, width=500, height=70)
     canvas_5.create_text(250, 25, text="Настройка монитора", fill="black", font=("Times", 30))
@@ -73,7 +70,6 @@ def monitor_settings_v2():
 def control_panel():
     root_4 = tk.Tk()
     root_4.title('Панель управления')
-    root_4.geometry('1920x1080')
     canvas_7 = Canvas(root_4, width=500, height=70)
     canvas_7.create_text(250, 25, text="Панель управления", fill="black", font=("Times", 30))
     canvas_8 = Canvas(root_4, width=3000, height=1400)
@@ -90,7 +86,6 @@ def control_panel():
 def Sound():
     root_5 = tk.Tk()
     root_5.title('Звук')
-    root_5.geometry('1920x1080')
     root_5.resizable(width=True, height=True)
     canvas_9 = Canvas(root_5, width=500, height=70)
     canvas_9.create_text(250, 25, text="Звук", fill="black", font=("Times", 30))
@@ -110,7 +105,6 @@ def Sound():
 def network():
     root_7 = tk.Tk()
     root_7.title("Сетевое соединение")
-    root_7.geometry('1920x1080')
     root_7.resizable(width=True, height=True)
     canvas_12 = Canvas(root_7, width=500, height=70)
     canvas_12.create_text(250, 25, text="Сетевое соединение", fill="black", font=("Times", 30))
@@ -135,7 +129,6 @@ def network():
 def data_and_time():
     root_8 = tk.Tk()
     root_8.title("Дата и время")
-    root_8.geometry('1920x1080')
     root_8.resizable(width=True, height=True)
     canvas_14 = Canvas(root_8, width=500, height=70)
     canvas_14.create_text(250, 25, text="Дата и время", fill="black", font=("Times", 30))
@@ -155,7 +148,6 @@ def data_and_time():
 def start_menu():
     root_9 = tk.Tk()
     root_9.title("Меню пуск")
-    root_9.geometry('1920x1080')
     root_9.resizable(width=True, height=True)
     canvas_16 = Canvas(root_9, width=500, height=70)
     canvas_16.create_text(250, 25, text="Меню пуск", fill="black", font=("Times", 30))
@@ -175,7 +167,6 @@ def start_menu():
 def file_manager():
     root_10 = tk.Tk()
     root_10.title("Менеджер файлов")
-    root_10.geometry('1920x1080')
     root_10.resizable(width=True, height=True)
     canvas_18 = Canvas(root_10, width=500, height=70)
     canvas_18.create_text(250, 30, text="Менеджер файлов", fill="black", font=("Times", 30))
@@ -193,7 +184,6 @@ def file_manager():
 def properties():
     root_11 = tk.Tk()
     root_11.title("Свойства")
-    root_11.geometry('1920x1080')
     root_11.resizable(width=True, height=True)
     canvas_20 = Canvas(root_11, width=500, height=70)
     canvas_21 = Canvas(root_11, width=3000, height=1400)
@@ -209,9 +199,6 @@ def properties():
     canvas_20.pack()
     canvas_21.pack()
 
-
-#О программе------------------------------------------------------------------------------------------------------------
-
 def about_programm():
     root_6 = tk.Tk()
     root_6.title("О программе")
@@ -222,8 +209,6 @@ def about_programm():
     canvas_11.create_text(290, 100, text="знания в работе компьютера, но не имеющих понимания работы", fill="black", font=("Times", 15))
     canvas_11.create_text(290, 120, text="на ОС Astra Linux!", fill="black", font=("Times", 15))
     canvas_11.pack()
-
-#Дополнительные функции-------------------------------------------------------------------------------------------------
 
 def icon_settings_link():
     webbrowser.open("https://tour.astralinux.ru/help/setup/fly-admin-theme.html")
@@ -254,7 +239,6 @@ def file_manager_link():
 
 def properties_link():
     webbrowser.open("https://uchet-jkh.ru/i/failovaya-sistema-astra-linux-osobennosti-i-preimushhestva/")
-#Главная страница-------------------------------------------------------------------------------------------------------
 
 root = tk.Tk()
 root.title('Программа - помощник')
