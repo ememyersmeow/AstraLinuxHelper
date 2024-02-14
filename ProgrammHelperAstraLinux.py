@@ -200,7 +200,6 @@ def properties():
     canvas_21.pack()
 
 
-#О программе------------------------------------------------------------------------------------------------------------
 
 def about_programm():
     root_6 = tk.Tk()
@@ -213,7 +212,6 @@ def about_programm():
     canvas_11.create_text(290, 120, text="на ОС Astra Linux!", fill="black", font=("Times", 15))
     canvas_11.pack()
 
-#Дополнительные функции-------------------------------------------------------------------------------------------------
 
 def icon_settings_link():
     webbrowser.open("https://tour.astralinux.ru/help/setup/fly-admin-theme.html")
@@ -244,7 +242,6 @@ def file_manager_link():
 
 def properties_link():
     webbrowser.open("https://uchet-jkh.ru/i/failovaya-sistema-astra-linux-osobennosti-i-preimushhestva/")
-#Главная страница-------------------------------------------------------------------------------------------------------
 
 root = tk.Tk()
 root.title('Программа - помощник')
@@ -274,8 +271,6 @@ button9 = tk.Button(root, text="Менеджер файлов", command=file_man
 button9.pack()
 button10 = tk.Button(root, text="Свойства", command=properties, font="Times 20", width=20, height=1)
 button10.pack()
-
-#-----------------------------------------------------------------------------------------------------------------------
 
 about_programm()
 root.mainloop()
